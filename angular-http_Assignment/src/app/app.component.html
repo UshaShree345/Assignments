@@ -1,0 +1,16 @@
+<app-header></app-header>
+<router-outlet> </router-outlet>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <body>
+    <tr *ngFor='let product of productService.products'>
+      <td>{{product.productName}}</td>
+      <td>{{product.productPrice}}</td>
+    </tr>
+  </body>
+</table>
